@@ -14,7 +14,7 @@ public class HelloController {
         return "hello"; //resources 에 있는 hello.html로 가라
     }
     @GetMapping("hello-mvc")
-    public String helloMvc(@RequestParam("name") String name, Model model){
+    public String HelloMvc(@RequestParam("name") String name, Model model){
         model.addAttribute("name",name);
         return "hello-template";
     }
